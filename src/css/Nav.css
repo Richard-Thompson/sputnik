@@ -11,7 +11,7 @@
   max-width: 300px;
 }
 
-nav{
+nav {
   justify-content: center;
   align-items: center;
 }
@@ -19,11 +19,12 @@ nav{
 nav div h1 {
   display: flex;
   justify-content: flex-start;
+  white-space: nowrap;
   margin: 20px !important;
   color: #ef7c01 !important;
   font-weight: 600 !important;
   margin-top: 35px !important;
-  font-size: 30pt !important;
+  font-size: 45pt !important;
 }
 
 .language {
@@ -31,7 +32,7 @@ nav div h1 {
   flex-direction: row;
   padding-right: 14px;
   justify-content: flex-end;
-  font-size:10pt;
+  font-size: 10pt;
 }
 
 .main {
@@ -40,32 +41,59 @@ nav div h1 {
 
 .tabs .tab {
   text-align: right;
-  font-size:10pt;
+  font-size: 13pt;
 }
 
- i{
-  color:black;
-  width:50px;
-  height:50px;
-  margin-top:10px;
+i {
+  color: black;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
 }
 
-.language p:first-child{
-  margin-right:10px;
+.language p:first-child {
+  margin-right: 10px;
   font-weight: 600;
 }
 
-@media only screen and (max-width:452px) {
-  .tabs{
+.hamburgerMenu {
+  width: 50px;
+  height:50px;
+  color:black;
+}
+
+div .hamburgerMenu span {
+  border-bottom: 2px solid black;
+  width: 50px;
+}
+
+.hamburgerTab{
+  margin-left:15px;
+  text-align:left;
+  font-size: 13pt;
+}
+
+@media only screen and (max-width:860px){
+  .tab{
+    display: none !important;
+  }
+  nav {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .tabs{
+    justify-content: flex-start !important;
     margin-left:10px !important;
   }
-  .tabs .tab{
-    text-align: left;
-  }
-  .language{
+  .language {
     justify-content: flex-start;
-    margin-left:24px;
+    margin-left: 28px;
+  }
+}
+
+@media only screen and (min-width:860px){
+  .hamburgerMenu{
+    display: none !important;
   }
 }
