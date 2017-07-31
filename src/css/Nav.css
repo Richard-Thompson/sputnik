@@ -44,6 +44,10 @@ nav div h1 {
   font-size: 13pt;
 }
 
+.tabs .tab:hover{
+ text-decoration: underline;
+}
+
 i {
   color: black;
   width: 50px;
