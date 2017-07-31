@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 nav {
@@ -68,11 +68,26 @@ div .hamburgerMenu span {
 }
 
 .hamburgerTab{
-  margin-left:15px;
+  margin-left:30px;
   text-align:left;
   font-size: 13pt;
 }
-
+@media only screen and (max-width:1550px){
+  nav{
+    justify-content: flex-start;
+  }
+  .logo{
+    margin-left:20px;
+  }
+}
+@media only screen and (max-width:1250px){
+  .logo{
+    margin-left:20px;
+  }
+  nav{
+    justify-content: flex-start;
+  }
+}
 @media only screen and (max-width:860px){
   .tab{
     display: none !important;
@@ -84,11 +99,11 @@ div .hamburgerMenu span {
   }
   .tabs{
     justify-content: flex-start !important;
-    margin-left:10px !important;
+    margin-left:30px !important;
   }
   .language {
     justify-content: flex-start;
-    margin-left: 28px;
+    margin-left: 45px !important;
   }
 }
 
