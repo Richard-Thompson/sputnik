@@ -1,13 +1,13 @@
 .services-content {
-  max-width: 850px;
   position: relative;
-  margin: 0 auto;
+  width: 60%;
 }
 
 .services-content>* {
   width: 60%;
-  margin: 0 auto;
-  margin-top: 35px;
+  margin: 35px 0;
+  margin-left: 250px;
+  margin-right: 10px !important;
   color: black;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .services-content p {
-  font-size: 15pt;
+  font-size: 18pt;
 }
 
 .aims {
@@ -35,11 +35,12 @@
 }
 
 .services-section :first-child {
-  margin-right: 45px;
+  margin-right: 90px;
 }
 
 .services-section p {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .services-button {
@@ -53,6 +54,10 @@
   flex-direction: row;
 }
 
+.services-image {
+  width: 40%;
+}
+
 .services-image img {
   width: 100%;
   height: 100%;
@@ -60,19 +65,17 @@
 
 @media only screen and (max-width:1550px) {
   .services-content {
-    margin-left: 55px !important;
+    margin-left: 150px !important;
+    width: 60%;
   }
   .services-content>* {
     margin: 0;
     margin-top: 35px;
-    width:90%;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width:1100px) {
-  .services-content {
-    width: 50%;
-  }
   .services-content>* {
     width: 90%;
     margin-top: 35px;
@@ -80,18 +83,22 @@
   .services-image {
     width: 50%;
   }
-}
-
-@media only screen and (max-width:900px) {
   .services-wrapper {
     display: flex;
     flex-direction: column;
   }
   .services-content {
     width: 90%;
+    margin-left: 100px !important;
   }
   .services-image {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width:860px) {
+  .services-content {
+    margin-left: 20px !important;
   }
 }
 
@@ -99,5 +106,17 @@
   .aims {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:495px) {
+  .services-content p {
+    font-size: 15pt;
+  }
+  button{
+    font-size: 14pt !important;
+  }
+  .services-section p{
+    font-size: 14pt !important;
   }
 }

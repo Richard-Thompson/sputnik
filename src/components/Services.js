@@ -8,7 +8,7 @@ class Services extends Component {
         <div className="services-content">
           <p>Services</p>
           <h1 className="services-title title is-2">Our pledge to quality</h1>
-          <p>We provide education support in countries where the infrastructure is not as established as elsewhere. We seize opportunities and stay strong, even when it gets difficult.</p>
+          <p className="services-main">We provide education support in countries where the infrastructure is not as established as elsewhere. We seize opportunities and stay strong, even when it gets difficult.</p>
           <h3 className="services-title title is-3">Our aims</h3>
           <div className="aims">
             <div>

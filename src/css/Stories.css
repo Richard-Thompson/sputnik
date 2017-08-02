@@ -1,68 +1,111 @@
-.hero-image{
+.hero-image {
   background-image: url('../../public/images/our-stories.jpg');
-  height:550px;
+  height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.content-wrapper{
-  margin:0 auto;
+
+.content-wrapper {
+  margin-left: 250px;
 }
-div .content-wrapper >*{
-  margin-top:35px;
-  max-width:1130px;
-  width:70%;
-  color:white;
+
+div .content-wrapper>* {
+  margin-top: 35px;
+  max-width: 930px;
+  width: 70%;
+  color: white;
 }
-.banner-title{
-  margin-bottom:0 !important;
-  font-size: 40pt !important;;
+
+.banner-title {
+  margin-bottom: 0 !important;
+  font-size: 40pt !important;
+  ;
 }
-.content-wrapper p{
- font-size:20pt !important;
+
+.content-wrapper p {
+  font-size: 22pt !important;
 }
-button{
-  width:210px !important;
-  height:48px !important;
+
+button {
+  width: 210px !important;
+  height: 48px !important;
   background-color: #333332;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
-.circles{
+
+.circles {
   display: flex;
   flex-direction: row;
   margin-top: 20px !important;
 }
-.circle:first-child{
+
+.circle:first-child {
   background-color: white;
 }
-.circle{
+
+.circle {
   border-radius: 50%;
   border: 1px solid white;
-  margin-right:5px;
-  height:20px;
-  width:20px;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
 }
-@media only screen and (max-width:1550px){
-  .content-wrapper{
-    margin-left:55px;
+
+@media only screen and (max-width:1550px) {
+  .content-wrapper {
+    margin-left: 150px;
   }
 }
-@media only screen and (max-width:700px){
-  div .content-wrapper >*{
-    width:100%;
+
+@media only screen and (max-width:1100px) {
+  .content-wrapper {
+    margin-left: 100px;
   }
 }
-@media only screen and (max-width:495px){
-  .content-wrapper p{
+
+@media only screen and (max-width:860px) {
+  .content-wrapper {
+    margin-left: 20px;
+  }
+  .content-wrapper p {
+    font-size: 15pt;
+  }
+  .banner-title {
+    font-size: 25pt !important;
+  }
+  button {
+    font-size: 15pt;
+  }
+  .hero-image {
+    background-image: url('../../public/images/our-stories-cropped.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  div .content-wrapper>* {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:495px) {
+  .content-wrapper p {
     font-size: 15pt !important;
   }
-  .banner-title{
+  .banner-title {
     font-size: 30pt !important;
   }
-  div .content-wrapper >*{
-    margin-top:20px !important;
+  div .content-wrapper>* {
+    margin-top: 20px !important;
   }
 }

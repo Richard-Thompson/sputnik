@@ -8,10 +8,11 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
+  margin-left: 250px;
+  padding: 0 !important;
 }
 
 nav {
-  justify-content: center;
   align-items: center;
 }
 
@@ -19,7 +20,7 @@ nav div h1 {
   display: flex;
   justify-content: flex-start;
   white-space: nowrap;
-  margin: 20px !important;
+  margin: 20px 0 !important;
   color: #ef7c01 !important;
   font-weight: 600 !important;
   margin-top: 35px !important;
@@ -35,16 +36,17 @@ nav div h1 {
 }
 
 .main {
-  max-width: 700px;
+  max-width: 1000px;
 }
 
 .tabs .tab {
   text-align: right;
-  font-size: 13pt;
+  font-size: 14pt;
+  cursor: pointer;
 }
 
-.tabs .tab:hover{
- text-decoration: underline;
+.tabs .tab:hover {
+  color:grey;
 }
 
 i {
@@ -52,6 +54,11 @@ i {
   width: 50px;
   height: 50px;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.language{
+  cursor: pointer;
 }
 
 .language p:first-child {
@@ -61,57 +68,155 @@ i {
 
 .hamburgerMenu {
   width: 50px;
-  height:50px;
-  color:black;
+  height: 50px;
+  color: black;
 }
 
-div .hamburgerMenu span {
-  border-bottom: 2px solid black;
-  width: 50px;
-}
-
-.hamburgerTab{
-  margin-left:30px;
-  text-align:left;
+.hamburgerTab {
+  margin-left: 20px;
+  text-align: left;
   font-size: 13pt;
 }
-@media only screen and (max-width:1550px){
-  nav{
+
+.hamburgerTab:hover{
+  color:grey;
+}
+
+.search-wrapper {
+  justify-content: flex-end !important;
+}
+
+.search-in {
+  width: 0px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: width 4s ease, border-color 4s ease;
+}
+
+.search-out {
+  width: 180px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: width 4s ease, border-color 4s ease;
+}
+
+.search-wrapper:focus .search-in{
+  width: 180px;
+  border: 1px solid black !important;
+}
+
+.search-wrapper:focus .search-out{
+  width: 0;
+  border: 1px solid white !important;
+}
+
+.search-wrapper-mobile:focus .search-in{
+  width: 180px;
+  border: 1px solid black !important;
+}
+
+.search-wrapper-mobile:focus .search-out{
+  width: 0;
+  border: 1px solid white !important;
+}
+
+@media only screen and (max-width:1550px) {
+  nav {
     justify-content: flex-start;
   }
-  .logo{
-    margin-left:20px;
+  .logo {
+    margin-left: 150px;
+    width: 20% !important;
+  }
+  nav div h1 {
+    font-size: 30pt !important;
+  }
+  .main {
+    padding-left: 20px !important;
   }
 }
-@media only screen and (max-width:1250px){
-  .logo{
-    margin-left:20px;
-  }
-  nav{
-    justify-content: flex-start;
+
+@media only screen and (max-width:1100px) {
+  .logo {
+    margin-left: 100px;
   }
 }
-@media only screen and (max-width:860px){
-  .tab{
+@media only screen and (max-width:1000px) {
+.tab {
     display: none !important;
   }
   nav {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
-  .tabs{
-    justify-content: flex-start !important;
-    margin-left:30px !important;
+  .tabs {
+    justify-content: flex-end !important;
   }
   .language {
-    justify-content: flex-start;
-    margin-left: 45px !important;
+    justify-content: flex-end;
+  }
+  .main {
+    margin-bottom: 5px;
+    padding-right: 0 !important;
+    width: 100%;
+  }
+  .title {
+    font-size: 30pt !important;
+    font-weight: 600 !important;
+    width: 100%;
+    margin-right: 20px !important;
+  }
+  nav div h1 {
+    margin: 0 !important;
+  }
+  .hamburgerTab{
+    margin-left:90px;
+  }
+}
+@media only screen and (max-width:860px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .hamburgerTab{
+    margin-left:10px;
   }
 }
 
-@media only screen and (min-width:860px){
-  .hamburgerMenu{
+@media only screen and (min-width:1000px) {
+  .hamburgerMenu {
     display: none !important;
+  }
+}
+
+@media only screen and (min-width:460px) {
+  .search-wrapper-mobile {
+    display: none
+  }
+}
+
+@media only screen and (max-width:460px) {
+  .search-box{
+    display: none;
+  }
+  i {
+    height: 20px !important;
+  }
+  input {
+    height: 28px !important;
+    margin-right: 15px !important;
+  }
+  .tabs {
+    margin-bottom: 10px !important;
+  }
+  .search-wrapper-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 10px !important;
+    height: 30px;
   }
 }
