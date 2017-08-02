@@ -2,11 +2,11 @@
 
 This project is a static website mocking up the jpg image of a website page provided by sputnik.
 
-The first task was to construct the navigation bar of the website. I used bulma and the columns feature to make the tabs of the navigation bar and used a max width for the logo and tabs, this allowed me to float the entire nav bar in the middle.
+The first task was to construct the navigation bar of the website. I used bulma and the columns feature to make the tabs of the navigation bar.
 
-I created the hero image by setting the image provided as a background image and the placing all the text within a div which had the css background image set. Again i used a max width for the text and floated it in the middle by setting margin to 0 auto.
+I created the hero image by setting the image provided as a background image and the placing all the text within a div which had the css background image set. 
 
-The services and products section was created by setting the image to 100% width and 100% height and making the text section 60% width until the screen resolution hits 1100px; due to the image being disorted below this i then set the image to 50% width and the same with the text until it reached a mobile screen resolution where i set the flex direction to column.
+The services and products section was created by setting the image to 100% width and 100% height and making the text section 60% width until the screen resolution hits 1100px; due to the image being disorted below this I then set the image to 50% width and the same with the text until it reached a mobile screen resolution where i set the flex direction to column.
 
 I would approach the next section by using position absolute and z-index of 2 and position with left, right, top ,bottom. The gardients i would achieve by using linear css gradients and color pick from the image provided.
 
