@@ -46,7 +46,7 @@ nav div h1 {
 }
 
 .tabs .tab:hover {
-  color:grey;
+  color:#ef7c01;
 }
 
 i {
@@ -79,11 +79,15 @@ i {
 }
 
 .hamburgerTab:hover{
-  color:grey;
+  color:#ef7c01;
 }
 
 .search-wrapper {
   justify-content: flex-end !important;
+}
+
+input{
+  font-size: 15pt !important;
 }
 
 .search-in {
@@ -92,7 +96,7 @@ i {
   margin-top: 5px;
   border-radius: 10px;
   border: 1px solid white;
-  transition: width 4s ease, border-color 4s ease;
+  transition: width 2s ease, border-color 4s ease;
 }
 
 .search-out {
@@ -101,7 +105,7 @@ i {
   margin-top: 5px;
   border-radius: 10px;
   border: 1px solid black;
-  transition: width 4s ease, border-color 4s ease;
+  transition: width 2s ease, border-color 4s ease;
 }
 
 .search-wrapper:focus .search-in{
@@ -114,15 +118,6 @@ i {
   border: 1px solid white !important;
 }
 
-.search-wrapper-mobile:focus .search-in{
-  width: 180px;
-  border: 1px solid black !important;
-}
-
-.search-wrapper-mobile:focus .search-out{
-  width: 0;
-  border: 1px solid white !important;
-}
 
 @media only screen and (max-width:1550px) {
   nav {
@@ -199,18 +194,28 @@ i {
 }
 
 @media only screen and (max-width:460px) {
+  .logo{
+    margin-top:30px;
+  }
+  .search-wrapper-mobile{
+    display: flex;
+    justify-content: flex-start !important;
+  }
   .search-box{
     display: none;
   }
   i {
     height: 20px !important;
+    margin-top:5px !important;
   }
   input {
     height: 28px !important;
-    margin-right: 15px !important;
+    margin-left: 20px !important;
+    margin-bottom:10px !important;
   }
-  .tabs {
-    margin-bottom: 10px !important;
+  
+  .main{
+    padding-bottom: 0 !important;
   }
   .search-wrapper-mobile {
     display: flex;

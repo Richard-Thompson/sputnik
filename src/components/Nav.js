@@ -38,13 +38,15 @@ class Nav extends Component {
                 <i onClick={this.handleSearchDisplay} className=" fa fa-search is-large"></i>
               </div>
             </div>
-              <div className="search-wrapper-mobile">
-                <input className={this.state.searchDisplay ? 'search-out' : 'search-in'}></input> 
-              </div>       
+                    
           </div>
        
       </nav>
-
+        {this.state.searchDisplay ?
+              <div className="search-wrapper-mobile">
+                <input className={this.state.searchDisplay ? 'search-out' : 'search-in'}></input> 
+              </div> :
+              null }
        {this.state.navDisplay ? 
               <div>
               <p className="column hamburgerTab">ABOUT US</p>
